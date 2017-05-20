@@ -95,3 +95,33 @@ expandtab inserts the correct number of actual spaces instead of a tab. While I 
 smarttab allows you to tab into the same tab of the previous line. I most do this as the internet said so.
 
 With that out of the way, we should now add a few plug ins to make things nicer.
+
+### Basic plug ins
+
+So we are going to add five plug ins which are super great. Once we get those out of the way, we will begin to explore further tweaks in Python. Python is quite opinionated as to what good python should look like so it is easy to test whether you plugs are working and, if so, how well.
+
+Let's get to it!
+
+
+Let's add vim-sensible by Mr. Pope who is basically the lord of vim. I trust his choices.
+
+So, we want NERDTree. It's a file tree and it is amazing. 
+
+We will use airline (some people use powerline, which is cool, I'm not really sure of the difference but some people in elm land seem more jazzed up about airline, so i'll let them make the decusuion for me. It provides you a nice context-aware coloring for what is going on in the screen above it.
+
+We will add another classic from Mr. Pope, vim-fugitive, for a super-slick integration with Git.
+
+Finally, we will add syntastic. As far as I can tell, it is the default all-singing all-dancing syntax highlighter in vim land. Sounds like a good choice to get started.
+
+Our .vimrc should now look like this:
+```vim
+call plug#begin()
+Plug 'tpope/vim-sensible'
+Plug 'scrooloose/nerdtree'
+Plug 'vim-airline/vim-airline'
+Plug 'tpope/vim-fugitive'
+Plug 'scrooloose/syntastic'
+call plug#end()
+```
+
+Remember, ```:wq``` then ```$ vim ~/.vimrc``` then ```:PlugInstall``` and voila! You're in the business.
