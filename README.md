@@ -45,3 +45,29 @@ At this point, if vim is new and crazy to you, or seems like a cruel joke from t
 
 
 Cool. Now let's make a .vimrc and get started.
+
+
+### .vimrc
+
+You may or may not have a .vimrc. Open a terminal and type: ```$ vim ~/.vimrc``` This will create an empty file in your root. Any time you want to make changes to how vim works, this is the place to start. 
+
+Let's get the plug system working first. We are not going to do anything, we are just going to get it set up and then focus on a few basic things. 
+
+Type in:
+
+```
+call plug#begin()
+call plug#end()
+```
+
+Those commands invoke the plug system on the boot of vim. If you want to install any plug, you just type:
+```
+Plug '<githubHandleHere>/<repoNameHere>'
+```
+between the plug#begin() and plug#end(). Once you enter that in, save ```:w``` and then type ```:PlugInstall```. You should see a new area pop up to your left and update you on the download status of anything new, in this case there is nothing new. As with everything in vim ```:q``` will quit out of the area you are currently in. Remember, vim is militant about the no mouse thing, you can only affect change via keyboard strokes.
+
+With that out of the way, let's set a few sane defaults in our .vimrc, below the plug system.
+
+### Sane Defaults
+
+These are my idiosyncracies. They are important to me, but I totally empathize if your programming patterns differ form my own.
