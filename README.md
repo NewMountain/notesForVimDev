@@ -19,7 +19,7 @@ my day-to-day needs.
   - [ ] To lint in all the languages required
   - [ ] File tree
   - [ ] Auto-formatting where a language supports it
-  - [ ] The basics to make it usable
+  - [x] The basics to make it usable
   
 
 
@@ -71,3 +71,27 @@ With that out of the way, let's set a few sane defaults in our .vimrc, below the
 ### Sane Defaults
 
 These are my idiosyncracies. They are important to me, but I totally empathize if your programming patterns differ form my own.
+
+So let's get them up and then talk through them:
+```vim
+" Sane defaults for me
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set expandtab
+set smarttab
+```
+
+So, first, in vim, a comment is a double quote. 
+
+Tabstop is how many spaces a tab should be. I like whitespace and all, but as most languages default to using semi-colons, two spaces is fine as a default (I don't like a lot of indentation in code). For languages where whitespace is syntax (Python Elm and Haskell) we will override with language specific defaults anyway.
+
+shiftwidth is how many spaces an indent should be. I can't see a reason why it would be a different value than tabstop
+
+softtabstop will make the editor insert spaces to simulate a tabstop if the tab key is hit in insert mode. 
+
+expandtab inserts the correct number of actual spaces instead of a tab. While I love tabs as a shorthand for multiple spaces, I think we can all agree actually using tabs in code can be an exercise in making your fellow coders hate you. Let's avoid that.
+
+smarttab allows you to tab into the same tab of the previous line. I most do this as the internet said so.
+
+With that out of the way, we should now add a few plug ins to make things nicer.
