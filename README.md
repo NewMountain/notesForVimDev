@@ -132,4 +132,4 @@ $ git clone https://github.com/NewMountain/notesForVimDev
 ``` 
 Now that we have that, we can see we have git integration upon opening the file. Let's do a few basic git commands.
 
-
+This is a test of git add. 
