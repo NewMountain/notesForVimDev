@@ -170,3 +170,14 @@ let g:syntastic_python_checkers=['pep8', 'pyflakes', 'pylint', 'pydocstyle']
 let g:syntastic_error_symbol = '✗'
 let g:syntastic_warning_symbol = '!'
 ```
+
+### Colors
+
+Let's be honest, the colors suck. Let's change them to something nicer.
+
+gruvbox comes highly recommended and I am a sucker for monokai. So let's do this:
+```vim
+Plug 'tomasr/molokai'
+Plug 'morhetz/gruvbox'
+Plug 'lsdr/monokai'
+```
