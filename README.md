@@ -125,3 +125,11 @@ call plug#end()
 ```
 
 Remember, ```:wq``` then ```$ vim ~/.vimrc``` then ```:PlugInstall``` and voila! You're in the business.
+
+Let's git clone this repo to test out vim-fugitive.
+```bash
+$ git clone https://github.com/NewMountain/notesForVimDev
+``` 
+Now that we have that, we can see we have git integration upon opening the file. Let's do a few basic git commands.
+
+
