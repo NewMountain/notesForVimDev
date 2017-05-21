@@ -140,4 +140,28 @@ Nice. This is a little off at first, but I could see myself qucikly getting used
 
 So let's use NERDTree to create a new python directory and then file. Write a python so bad that the editor can't help but yell at us, then fix it.
 
-That all went well. This seems to be working well now.
+That all went well. This seems to be working well now. Python lints and I made another commit. Life is looking good. Let's check what the .vimrc looks like at this point.
+
+
+```vim
+call plug#begin()
+Plug 'tpope/vim-sensible'
+Plug 'scrooloose/nerdtree'
+Plug 'vim-airline/vim-airline'
+Plug 'scrooloose/syntastic'
+Plug 'tpope/vim-fugitive'
+call plug#end()
+ 
+" Sane defaults for me
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set expandtab
+set smarttab
+set number
+ 
+" Syntastic config for python
+let g:syntastic_python_checkers=['pep8', 'pyflakes', 'pylint', 'pydocstyle']
+let g:syntastic_error_symbol = '✗'
+let g:syntastic_warning_symbol = '!'
+```
