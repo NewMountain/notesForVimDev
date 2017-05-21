@@ -17,7 +17,7 @@ my day-to-day needs.
     - [ ] HTML
     - [ ] CSS
   - [ ] To lint in all the languages required
-  - [ ] File tree
+  - [x] File tree
   - [ ] Auto-formatting where a language supports it
   - [x] The basics to make it usable
   
