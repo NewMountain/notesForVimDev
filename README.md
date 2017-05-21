@@ -140,6 +140,8 @@ Nice. This is a little off at first, but I could see myself qucikly getting used
 
 So let's use NERDTree to create a new python directory and then file. Write a python so bad that the editor can't help but yell at us, then fix it.
 
+So inside NERDTree, we hit ```m```, and then ```a``` to create a new child node. Append with a ```/``` if it is a directory. Otherwise, vim will assume it is a file.
+
 That all went well. This seems to be working well now. Python lints and I made another commit. Life is looking good. Let's check what the .vimrc looks like at this point.
 
 
@@ -159,7 +161,10 @@ set softtabstop=2
 set expandtab
 set smarttab
 set number
- 
+
+" Give NERDTree the gift of sight
+let NERDTreeShowHidden=1
+
 " Syntastic config for python
 let g:syntastic_python_checkers=['pep8', 'pyflakes', 'pylint', 'pydocstyle']
 let g:syntastic_error_symbol = '✗'
