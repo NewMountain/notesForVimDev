@@ -132,4 +132,12 @@ $ git clone https://github.com/NewMountain/notesForVimDev
 ``` 
 Now that we have that, we can see we have git integration upon opening the file. Let's do a few basic git commands.
 
-This is a test of git add. 
+This is a test of git add.
+
+Nice. This is a little off at first, but I could see myself qucikly getting used to this.
+
+### Make a python file then walk through the configuration
+
+So let's use NERDTree to create a new python directory and then file. Write a python so bad that the editor can't help but yell at us, then fix it.
+
+That all went well. This seems to be working well now.
